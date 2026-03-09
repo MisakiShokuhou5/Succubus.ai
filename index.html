@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Succubus AI - Sistemas de Inteligência Neural</title>
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            border: 1px solid #30363d;
+            padding: 40px;
+            border-radius: 15px;
+            background: rgba(22, 27, 34, 0.8);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+        .subtitle {
+            color: #8b949e;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        .plans {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .plan {
+            background-color: #0d1117;
+            border: 2px solid #30363d;
+            padding: 25px;
+            border-radius: 12px;
+            width: 160px;
+            transition: transform 0.3s ease;
+        }
+        .plan:hover {
+            transform: translateY(-5px);
+        }
+        .plan-name {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .price {
+            font-size: 1.6em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Lógica de Cores: Azul para o básico, Rosa para o elite */
+        
+        .free { 
+            border-color: #00ffff; 
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+        }
+        .free .plan-name, .free .price { color: #00ffff; }
+
+        .premium { 
+            border-color: #bd00ff; 
+            box-shadow: 0 0 10px rgba(189, 0, 255, 0.2);
+        }
+        .premium .plan-name, .premium .price { color: #bd00ff; }
+
+        .succubus { 
+            border-color: #ff00ff; 
+            box-shadow: 0 0 15px rgba(255, 0, 255, 0.4);
+        }
+        .succubus .plan-name, .succubus .price { color: #ff00ff; }
+
+        .status {
+            color: #484f58;
+            font-size: 0.8em;
+            margin-top: 30px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SUCCUBUS AI</h1>
+        <p class="subtitle">Sistemas de Inteligência Neural Personalizados</p>
+        <p style="max-width: 500px; margin: 0 auto;">Acesso exclusivo a motores de IA avançados e planejamento ativo de tarefas.</p>
+        
+        <div class="plans">
+            <div class="plan free">
+                <div class="plan-name">Free</div>
+                <div class="price">R$ 0</div>
+                <p>Status: Ativo</p>
+            </div>
+            <div class="plan premium">
+                <div class="plan-name">Premium</div>
+                <div class="price">R$ 1,90</div>
+                <p>Status: Off</p>
+            </div>
+            <div class="plan succubus">
+                <div class="plan-name">Succubus</div>
+                <div class="price">R$ 5,70</div>
+                <p>Status: Off</p>
+            </div>
+        </div>
+        <p class="status">>_ ENCRYPTED_CONNECTION: OK<br>>_ PAYMENT_GATEWAY: STRIPE_LIVE</p>
+    </div>
+</body>
+</html>
